@@ -18,6 +18,9 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	const count = Object.values(library).filter(item => readingStatus === true).length;
+    return count;
+
 };
 
 // Do not change the code below
